@@ -223,6 +223,10 @@ nav a:hover {
     transition: 0.3s;
 
     border: 1px solid transparent;
+
+    cursor: pointer;
+
+    margin-bottom: 35px;
 }
 
 
@@ -399,10 +403,6 @@ footer {
 /* ================================
    PROJECT CARD 02
 ================================ */
-
-.project-card {
-    margin-bottom: 35px;
-}
 
 .project-number {
     color: #6c8cff;
