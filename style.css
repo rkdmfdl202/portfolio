@@ -264,6 +264,15 @@ nav a:hover {
     color: #17251b;
 }
 
+.project-meta {
+    margin-top: 16px;
+
+    color: #7d8490;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
 
 /* ================================
    CONTACT
@@ -530,6 +539,44 @@ footer {
     font-size: 19px;
 }
 
+.modal-meta {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.modal-meta div {
+    padding: 18px;
+
+    background: #f7f8f3;
+
+    border-radius: 16px;
+}
+
+.modal-meta span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #6c8cff;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.modal-meta strong {
+    display: block;
+
+    color: #17251b;
+
+    font-size: 14px;
+    line-height: 1.45;
+}
+
 .modal-section {
     padding: 55px 0;
 
@@ -770,6 +817,7 @@ footer {
         font-size: 34px;
     }
 
+    .modal-meta,
     .metric-grid,
     .segment-grid,
     .result-grid,
