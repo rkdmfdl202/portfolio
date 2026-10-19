@@ -34,4 +34,5 @@ document.addEventListener("DOMContentLoaded", function () {
     setupProjectModal("project1", "project1Modal", "project1Close", "project1Overlay");
     setupProjectModal("project2", "project2Modal", "project2Close", "project2Overlay");
     setupProjectModal("project3", "project3Modal", "project3Close", "project3Overlay");
+    setupProjectModal("project4", "project4Modal", "project4Close", "project4Overlay");
 });
