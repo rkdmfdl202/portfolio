@@ -191,6 +191,42 @@
 
         </div>
 
+
+        <!-- PROJECT 04 -->
+        <div class="project-card" id="project4">
+
+            <p class="project-number">
+                04
+            </p>
+
+            <p class="project-type">
+                SUBWAY SAFETY ANALYSIS
+            </p>
+
+            <h3>
+                열차 내 사고는 어디에서 더 많이 발생하는가
+            </h3>
+
+            <p class="project-description">
+                서울시 지하철 열차 내 사고 패턴 분석 및 안전 개선안 제안
+            </p>
+
+            <p class="project-meta">
+                팀 프로젝트 · 5인 · 공공 데이터
+            </p>
+
+            <div class="project-tags">
+                <span>Train Accident</span>
+                <span>EDA</span>
+                <span>Safety Analysis</span>
+            </div>
+
+            <p class="project-more">
+                Click to view case study
+            </p>
+
+        </div>
+
     </section>
 
 
@@ -1203,8 +1239,273 @@
     </div>
 
 
+    <!-- =========================================
+         PROJECT 04 DETAIL MODAL
+    ========================================== -->
+    <div class="project-modal" id="project4Modal">
+
+        <div class="modal-overlay" id="project4Overlay"></div>
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="project4Close"
+                type="button"
+            >
+                ×
+            </button>
+
+            <p class="modal-type">
+                SUBWAY SAFETY ANALYSIS
+            </p>
+
+            <h2>
+                열차 내 사고는 어디에서 더 많이 발생하는가
+            </h2>
+
+            <p class="modal-subtitle">
+                서울시 지하철 사고 데이터를 기반으로 열차 내 사고의 시간적·공간적·구조적 패턴을 분석하고 안전 개선안을 제안한 프로젝트
+            </p>
+
+            <div class="modal-meta">
+                <div>
+                    <span>TYPE</span>
+                    <strong>Team Project</strong>
+                </div>
+                <div>
+                    <span>TEAM</span>
+                    <strong>5 Members</strong>
+                </div>
+                <div>
+                    <span>DATA</span>
+                    <strong>Public Data</strong>
+                </div>
+                <div>
+                    <span>ROLE</span>
+                    <strong>Train Accident Analysis</strong>
+                </div>
+            </div>
+
+
+            <div class="modal-section">
+
+                <p class="modal-label">
+                    PROJECT OVERVIEW
+                </p>
+
+                <h3>
+                    사고 건수만이 아니라,
+                    <span>사고가 발생한 환경의 특징</span>을 함께 분석
+                </h3>
+
+                <p>
+                    서울교통공사의 최근 5년 사고 데이터에 이용객 수, 환승 여부,
+                    승강장 구조, 역사 노후도 등의 정보를 결합해 사고 유형별 발생 패턴을 분석했습니다.
+                    저는 이 중 열차 내 사고 분석을 담당했습니다.
+                </p>
+
+            </div>
+
+
+            <div class="modal-section">
+
+                <p class="modal-label">
+                    MY ROLE
+                </p>
+
+                <h3>
+                    Train Accident Analysis
+                </h3>
+
+                <ul class="role-list">
+                    <li>열차 내 사고 분석 가설 수립</li>
+                    <li>출퇴근 시간대별 이용객과 사고 비중 비교</li>
+                    <li>열차 내 사고 다발역 및 환승역 비중 분석</li>
+                    <li>곡선·직선 승강장별 사고 특성 비교</li>
+                    <li>사고 다발역의 역사 노후도 비교</li>
+                    <li>혼잡·환승·승강장 구조·노후도를 결합한 복합 인사이트 도출</li>
+                    <li>수직 지지봉 확충 및 능동형 현가장치 개선안 제안</li>
+                </ul>
+
+            </div>
+
+
+            <div class="modal-section">
+
+                <p class="modal-label">
+                    01 · TIME & TRANSFER
+                </p>
+
+                <h3>
+                    단순 이용객 수보다
+                    <span>출근 시간대와 환승 구조에서 위험 패턴이 뚜렷</span>
+                </h3>
+
+                <div class="result-grid">
+
+                    <div>
+                        <strong>출근 시간</strong>
+                        <span>열차 내 사고 비중 최고</span>
+                    </div>
+
+                    <div>
+                        <strong>90%</strong>
+                        <span>사고 상위 10개 역 중 환승역 비중</span>
+                    </div>
+
+                    <div>
+                        <strong>복합 거점</strong>
+                        <span>다수 노선이 겹치는 환승 구조</span>
+                    </div>
+
+                </div>
+
+                <p>
+                    퇴근 시간대 이용객 수가 가장 많았지만 열차 내 사고 비중은 출근 시간대에서 더 높게 나타났고,
+                    사고 상위 10개 역 중 90%가 환승역이었습니다.
+                    이를 통해 이용객 수 자체보다 특정 시간대의 밀집과 환승 구조가 함께 나타나는 환경에 주목했습니다.
+                </p>
+
+            </div>
+
+
+            <div class="modal-section">
+
+                <p class="modal-label">
+                    02 · PLATFORM STRUCTURE
+                </p>
+
+                <h3>
+                    곡선역과 직선역은
+                    <span>서로 다른 위험 패턴</span>을 보였습니다
+                </h3>
+
+                <div class="result-grid">
+
+                    <div>
+                        <strong>60%</strong>
+                        <span>사고 상위 10개 역 중 곡선 승강장</span>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <span>TOP 10 내 직선 사고역의 환승역 비중</span>
+                    </div>
+
+                    <div>
+                        <strong>2가지 패턴</strong>
+                        <span>곡선 구조 vs 환승 혼잡</span>
+                    </div>
+
+                </div>
+
+                <p>
+                    사고 다발역에서는 곡선 승강장이 자주 관찰됐지만,
+                    직선 승강장 사고역은 모두 환승역이었습니다.
+                    따라서 곡선역은 구조적 특성, 직선역은 환승·혼잡 특성을 중심으로
+                    서로 다른 위험 패턴을 구분해 해석했습니다.
+                </p>
+
+            </div>
+
+
+            <div class="modal-section">
+
+                <p class="modal-label">
+                    03 · AGING INFRASTRUCTURE
+                </p>
+
+                <h3>
+                    노후도도 함께 나타났지만,
+                    <span>단일 요인으로는 설명되지 않았습니다</span>
+                </h3>
+
+                <p>
+                    사고 상위권 역에는 노후 역사가 다수 포함됐지만,
+                    비교적 신축인 역도 사고 상위권에 포함됐습니다.
+                    이를 통해 노후도 하나보다 곡선 선형, 환승 유입 등 여러 조건이 함께 나타나는 환경을
+                    종합적으로 볼 필요가 있다고 판단했습니다.
+                </p>
+
+            </div>
+
+
+            <div class="modal-section">
+
+                <p class="modal-label">
+                    04 · KEY INSIGHT
+                </p>
+
+                <h3>
+                    열차 내 사고는 하나의 요인보다
+                    <span>혼잡·환승·곡선 선형·노후도가 결합된 환경에서 집중되는 패턴</span>
+                </h3>
+
+                <p>
+                    관찰 데이터에서 특정 조건과 사고 발생이 함께 나타나는 패턴을 확인했으며,
+                    이를 인과관계로 단정하지 않고 복합 위험 요인 관점에서 해석했습니다.
+                </p>
+
+            </div>
+
+
+            <div class="modal-section">
+
+                <p class="modal-label">
+                    05 · ACTION
+                </p>
+
+                <h3>
+                    분석 결과를
+                    <span>열차 내부 안전 개선안</span>으로 연결
+                </h3>
+
+                <div class="action-grid">
+
+                    <div>
+                        <span>01</span>
+                        <h4>수직 지지봉 확충</h4>
+                        <p>
+                            혼잡 상황과 차량 흔들림에서 승객이 신체를 지지할 수 있는 지점을 늘려
+                            전도 위험을 줄이는 방안을 제안했습니다.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <h4>능동형 현가장치 검토</h4>
+                        <p>
+                            차량 흔들림을 감지·제어해 곡선 구간의 물리적 쏠림을 완화하는
+                            기술적 개선 방향을 제안했습니다.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-section conclusion-box">
+
+                <p class="modal-label">
+                    CONCLUSION
+                </p>
+
+                <h3>
+                    사고 건수 비교에서 끝나지 않고,<br>
+                    <span>사고가 집중되는 환경의 복합적인 패턴을 찾아 안전 개선안으로 연결했습니다.</span>
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
     <!-- JAVASCRIPT -->
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=7"></script>
 
 </body>
 </html>
