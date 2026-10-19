@@ -1,24 +1,444 @@
-<div class="project-card" id="retention-project">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <div class="project-number">01</div>
+  <title>Data Analyst Portfolio</title>
 
-  <p class="project-type">
-    USER BEHAVIOR ANALYSIS
-  </p>
+  <!-- CSS 연결 -->
+  <link rel="stylesheet" href="./style.css">
+</head>
 
-  <h3>
-    왜 남고, 왜 떠나는가
-  </h3>
+<body>
 
-  <p>
-    2023년 5월 대량 유입 사용자의
-    Retention 행동 분석
-  </p>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#" class="logo">PORTFOLIO.</a>
 
-  <div class="project-tags">
-    <span>Retention</span>
-    <span>User Behavior</span>
-    <span>A/B Test</span>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero">
+      <p class="eyebrow">DATA ANALYST PORTFOLIO</p>
+
+      <h1>
+        데이터를 통해 문제를 발견하고,<br>
+        <span>사용자 행동을 이해합니다.</span>
+      </h1>
+
+      <p class="hero-description">
+        사용자 행동과 Retention을 분석하고<br>
+        데이터 기반의 제품 개선 방향을 제안합니다.
+      </p>
+
+      <a href="#projects" class="primary-btn">
+        View Projects ↓
+      </a>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-heading">
+        <p class="section-number">01</p>
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about-card">
+        <p>
+          데이터를 통해 사용자 행동을 이해하고,
+          문제를 발견하는 것에서 끝나지 않고
+          <strong>실행 가능한 개선 방향까지 연결하는 분석가</strong>를 목표로 하고 있습니다.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- PROJECT -->
+    <section id="projects" class="section projects-section">
+
+      <div class="section-heading">
+        <p class="section-number">02</p>
+        <h2>Projects</h2>
+      </div>
+
+
+      <!-- 프로젝트 카드 -->
+      <article class="project-card" id="retentionProject">
+
+        <div class="project-top">
+          <span class="project-index">01</span>
+
+          <span class="project-arrow">↗</span>
+        </div>
+
+        <p class="project-type">
+          USER BEHAVIOR ANALYSIS
+        </p>
+
+        <h3>
+          왜 남고, 왜 떠나는가
+        </h3>
+
+        <p class="project-description">
+          2023년 5월 대량 유입 사용자의 Retention 행동 분석
+        </p>
+
+        <div class="project-tags">
+          <span>Retention</span>
+          <span>User Behavior</span>
+          <span>A/B Test</span>
+        </div>
+
+        <p class="project-more">
+          Click to view case study
+        </p>
+
+      </article>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+
+      <div class="section-heading">
+        <p class="section-number">03</p>
+        <h2>Contact</h2>
+      </div>
+
+      <p class="contact-text">
+        함께 이야기하고 싶은 내용이 있다면 연락해주세요.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:your@email.com">Email</a>
+
+        <a
+          href="https://github.com/rkdmfdl202"
+          target="_blank"
+        >
+          GitHub
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================
+       PROJECT MODAL
+  ========================================== -->
+
+  <div class="modal" id="projectModal">
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close" id="modalClose">
+        ×
+      </button>
+
+
+      <!-- HEADER -->
+
+      <div class="modal-header">
+
+        <p class="modal-type">
+          USER BEHAVIOR ANALYSIS
+        </p>
+
+        <h2>
+          왜 남고, 왜 떠나는가
+        </h2>
+
+        <p class="modal-subtitle">
+          2023년 5월 대량 유입 사용자의 Retention 행동 분석
+        </p>
+
+
+        <div class="modal-info">
+
+          <div>
+            <span>TYPE</span>
+            <strong>Team Project</strong>
+          </div>
+
+          <div>
+            <span>ROLE</span>
+            <strong>User Behavior Analysis</strong>
+          </div>
+
+          <div>
+            <span>TOOLS</span>
+            <strong>Python · Pandas · MySQL · SciPy</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PROBLEM -->
+
+      <section class="case-section">
+
+        <p class="case-number">01 · PROBLEM</p>
+
+        <h3>
+          빠른 첫 Vote 진입이<br>
+          실제 반복 이용으로 이어지는가?
+        </h3>
+
+        <p>
+          2023년 5월 약 63.6만 명의 신규 사용자가 집중적으로
+          유입되었습니다.
+          48시간 내 첫 Vote 진입률은 높았지만,
+          이후 Retention은 빠르게 감소했습니다.
+        </p>
+
+
+        <div class="metric-grid">
+
+          <div class="metric-card">
+            <strong>89.03%</strong>
+            <span>48h Activation</span>
+          </div>
+
+          <div class="metric-card">
+            <strong>68.0%</strong>
+            <span>W2 Retention</span>
+          </div>
+
+          <div class="metric-card">
+            <strong>24.9%</strong>
+            <span>W4 Retention</span>
+          </div>
+
+          <div class="metric-card">
+            <strong>2.8%</strong>
+            <span>W8 Retention</span>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ANALYSIS -->
+
+      <section class="case-section">
+
+        <p class="case-number">02 · ANALYSIS</p>
+
+        <h3>
+          첫 Vote 이후<br>
+          강도 × 지속성으로 사용자 세분화
+        </h3>
+
+
+        <div class="analysis-grid">
+
+          <div class="analysis-box">
+            <span>초기 강도</span>
+
+            <strong>
+              첫 Vote 후 24시간 내<br>
+              Vote 횟수
+            </strong>
+          </div>
+
+
+          <div class="analysis-box">
+            <span>초기 지속성</span>
+
+            <strong>
+              R1~R7 중<br>
+              Vote 활동일 수
+            </strong>
+          </div>
+
+        </div>
+
+        <p>
+          두 지표를 교차해 사용자를
+          고강도·고지속 / 고강도·저지속 /
+          저강도·고지속 / 저강도·저지속
+          4개 유형으로 구분했습니다.
+        </p>
+
+      </section>
+
+
+      <!-- INSIGHT -->
+
+      <section class="case-section insight-section">
+
+        <p class="case-number">
+          03 · KEY INSIGHT
+        </p>
+
+        <h3>
+          초기 Vote 횟수보다<br>
+          <span>초기 지속성이 Retention을 더 크게 구분</span>
+        </h3>
+
+
+        <div class="compare-box">
+
+          <div>
+            <span>고강도 · 고지속</span>
+            <strong>83.05%</strong>
+          </div>
+
+          <p>VS</p>
+
+          <div>
+            <span>고강도 · 저지속</span>
+            <strong>38.93%</strong>
+          </div>
+
+        </div>
+
+
+        <p class="difference">
+          W2 Retention 차이
+          <strong>+44.12%p</strong>
+        </p>
+
+
+        <p class="stat-text">
+          W2~W8에서 초기 지속성과 이후 Retention 간
+          통계적으로 유의한 연관성을 확인
+          <strong>p &lt; .05</strong>
+        </p>
+
+      </section>
+
+
+      <!-- ACTION -->
+
+      <section class="case-section">
+
+        <p class="case-number">
+          04 · ACTION
+        </p>
+
+        <div class="action-grid">
+
+          <div class="action-card">
+
+            <span>01</span>
+
+            <h4>
+              R3 Re-engagement
+            </h4>
+
+            <p>
+              첫 주 참여율 감소를 바탕으로
+              R3 중간 재참여 알림 1회를 제안하고
+              A/B Test를 설계했습니다.
+            </p>
+
+          </div>
+
+
+          <div class="action-card">
+
+            <span>02</span>
+
+            <h4>
+              Question Experience
+            </h4>
+
+            <p>
+              Question 유형별 관심·신고 행동을 분석하고
+              LLM 기반 개인화 질문 경험 개선안을 제안했습니다.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- MY ROLE -->
+
+      <section class="case-section role-section">
+
+        <p class="case-number">
+          MY ROLE
+        </p>
+
+        <h3>
+          사용자 행동과 Retention을 중심으로 분석
+        </h3>
+
+        <ul>
+          <li>48h Activation 기준 검토</li>
+          <li>초기 강도·지속성 사용자 세분화</li>
+          <li>Segment별 W2~W8 Retention 비교</li>
+          <li>초기 지속성 × Retention 카이제곱 검정</li>
+          <li>R3 재참여 액션 및 A/B Test 설계</li>
+        </ul>
+
+      </section>
+
+
+      <!-- RESULT -->
+
+      <section class="case-section final-insight">
+
+        <p class="case-number">
+          CONCLUSION
+        </p>
+
+        <h3>
+          문제는 첫 Vote 자체보다,<br>
+          <span>첫 경험을 반복 이용으로 연결하는 과정</span>
+        </h3>
+
+      </section>
+
+
+      <div class="modal-buttons">
+
+        <a
+          href="https://github.com/rkdmfdl202"
+          target="_blank"
+          class="secondary-btn"
+        >
+          GitHub
+        </a>
+
+        <button
+          class="primary-btn"
+          id="modalCloseBottom"
+        >
+          Close
+        </button>
+
+      </div>
+
+    </div>
+
   </div>
 
-</div>
+
+  <!-- JS 연결 -->
+  <script src="./script.js"></script>
+
+</body>
+</html>
