@@ -395,3 +395,386 @@ footer {
     }
 
 }
+
+/* ================================
+   PROJECT CARD 02
+================================ */
+
+.project-card {
+    margin-bottom: 35px;
+}
+
+.project-number {
+    color: #6c8cff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.project-tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+.project-tags span {
+    background: #ebefff;
+    color: #6c8cff;
+
+    padding: 8px 14px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.project-more {
+    margin-top: 30px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   MODAL
+================================ */
+
+.project-modal {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    z-index: 9999;
+}
+
+.project-modal.active {
+    display: block;
+}
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(15, 20, 30, 0.6);
+
+    backdrop-filter: blur(7px);
+}
+
+.modal-content {
+    position: relative;
+
+    width: 90%;
+    max-width: 1000px;
+
+    max-height: 90vh;
+
+    margin: 5vh auto;
+
+    padding: 65px;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border-radius: 32px;
+}
+
+.modal-close {
+    position: absolute;
+
+    top: 25px;
+    right: 28px;
+
+    width: 44px;
+    height: 44px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #ebefff;
+
+    color: #6c8cff;
+
+    font-size: 27px;
+
+    cursor: pointer;
+}
+
+.modal-type,
+.modal-label {
+    color: #6c8cff;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.modal-content > h2 {
+    margin-top: 10px;
+
+    font-size: 48px;
+
+    letter-spacing: -2px;
+}
+
+.modal-subtitle {
+    margin-top: 12px;
+
+    color: #747a84;
+
+    font-size: 19px;
+}
+
+.modal-section {
+    padding: 55px 0;
+
+    border-bottom: 1px solid #e7e9e6;
+}
+
+.modal-section h3 {
+    margin: 12px 0 20px;
+
+    font-size: 32px;
+
+    line-height: 1.4;
+}
+
+.modal-section h3 span {
+    color: #6c8cff;
+}
+
+.modal-section > p {
+    color: #747a84;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* 지표 */
+
+.metric-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.metric-box {
+    padding: 25px;
+
+    background: #f7f8f3;
+
+    border-radius: 18px;
+}
+
+.metric-box span {
+    display: block;
+
+    color: #6c8cff;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.metric-box strong {
+    display: block;
+
+    margin: 7px 0;
+
+    font-size: 20px;
+}
+
+.metric-box p {
+    color: #747a84;
+
+    font-size: 14px;
+}
+
+
+/* 세그먼트 */
+
+.segment-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+
+    margin-top: 30px;
+}
+
+.segment-box {
+    padding: 25px;
+
+    background: #f7f8f3;
+
+    border-radius: 18px;
+
+    border: 1px solid transparent;
+}
+
+.segment-box strong {
+    color: #6c8cff;
+
+    font-size: 27px;
+}
+
+.segment-box h4 {
+    margin: 5px 0;
+
+    font-size: 19px;
+}
+
+.segment-box p {
+    color: #747a84;
+
+    font-size: 14px;
+}
+
+.active-segment {
+    background: #ebefff;
+
+    border-color: #6c8cff;
+}
+
+
+/* 결과 */
+
+.result-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin: 30px 0;
+}
+
+.result-grid div {
+    padding: 25px;
+
+    background: #ebefff;
+
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+.result-grid strong {
+    display: block;
+
+    color: #6c8cff;
+
+    font-size: 28px;
+}
+
+.result-grid span {
+    color: #747a84;
+
+    font-size: 13px;
+}
+
+
+/* Action */
+
+.action-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
+
+    margin-top: 25px;
+}
+
+.action-grid div {
+    padding: 28px;
+
+    background: #f7f8f3;
+
+    border-radius: 20px;
+}
+
+.action-grid span {
+    color: #6c8cff;
+
+    font-weight: 800;
+}
+
+.action-grid h4 {
+    margin: 8px 0;
+
+    font-size: 19px;
+}
+
+.action-grid p {
+    color: #747a84;
+
+    font-size: 14px;
+}
+
+
+/* 역할 */
+
+.role-list {
+    margin-top: 20px;
+
+    list-style: none;
+}
+
+.role-list li {
+    padding: 12px 0;
+
+    border-bottom: 1px solid #e7e9e6;
+}
+
+.role-list li::before {
+    content: "→";
+
+    margin-right: 10px;
+
+    color: #6c8cff;
+
+    font-weight: 800;
+}
+
+
+/* 결론 */
+
+.conclusion-box {
+    text-align: center;
+
+    border-bottom: none;
+}
+
+
+/* 모바일 */
+
+@media screen and (max-width: 768px) {
+
+    .modal-content {
+        padding: 50px 25px;
+    }
+
+    .modal-content > h2 {
+        font-size: 34px;
+    }
+
+    .metric-grid,
+    .segment-grid,
+    .result-grid,
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
