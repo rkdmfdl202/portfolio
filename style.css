@@ -1,832 +1,397 @@
-/* =============================================
-   COLOR
-============================================= */
-
-:root {
-  --bg: #f7f8f5;
-  --white: #ffffff;
-
-  --text: #17231c;
-  --gray: #747a84;
-  --light-gray: #e7e9e6;
-
-  --blue: #6c8cff;
-  --blue-dark: #536fe8;
-  --blue-light: #ebefff;
-
-  --shadow: 0 24px 70px rgba(35, 45, 75, 0.10);
-}
-
-
-/* =============================================
-   RESET
-============================================= */
+/* ================================
+   기본 설정
+================================ */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family:
-    Arial,
-    "Noto Sans KR",
-    sans-serif;
+    font-family: Arial, "Noto Sans KR", sans-serif;
 
-  background: var(--bg);
-  color: var(--text);
+    background-color: #f7f8f3;
 
-  line-height: 1.6;
-}
+    color: #17251b;
 
-a {
-  color: inherit;
+    line-height: 1.6;
 }
 
 
-/* =============================================
+/* ================================
    HEADER
-============================================= */
+================================ */
 
-.header {
-  width: 100%;
+header {
+    width: 100%;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  padding: 28px 7%;
+    padding: 30px 8%;
 
-  position: sticky;
-  top: 0;
-
-  z-index: 50;
-
-  background: rgba(247, 248, 245, 0.9);
-
-  backdrop-filter: blur(15px);
-
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    background-color: #f7f8f3;
 }
+
 
 .logo {
-  text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
 
-  font-size: 20px;
-  font-weight: 800;
-
-  letter-spacing: -0.5px;
-}
-
-.nav {
-  display: flex;
-  gap: 32px;
-}
-
-.nav a {
-  text-decoration: none;
-
-  font-size: 15px;
-  font-weight: 600;
-
-  transition: 0.2s;
-}
-
-.nav a:hover {
-  color: var(--blue);
+    color: #17251b;
 }
 
 
-/* =============================================
-   HERO
-============================================= */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+
+nav a {
+    color: #17251b;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+
+nav a:hover {
+    color: #6c8cff;
+}
+
+
+/* ================================
+   HOME
+================================ */
 
 .hero {
-  min-height: 88vh;
+    min-height: 85vh;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-  padding: 80px 8%;
+    padding: 80px 8%;
 }
 
-.eyebrow {
-  font-size: 15px;
-  font-weight: 800;
 
-  color: var(--blue);
+.hero-label {
+    color: #6c8cff;
 
-  letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 700;
 
-  margin-bottom: 24px;
+    margin-bottom: 20px;
 }
+
 
 .hero h1 {
-  max-width: 1000px;
+    font-size: 70px;
 
-  font-size: clamp(48px, 6vw, 86px);
+    line-height: 1.15;
 
-  line-height: 1.12;
-  letter-spacing: -4px;
+    letter-spacing: -3px;
+
+    max-width: 1000px;
 }
+
 
 .hero h1 span {
-  color: var(--blue);
+    color: #6c8cff;
 }
+
 
 .hero-description {
-  margin-top: 32px;
+    margin-top: 30px;
 
-  font-size: 20px;
+    font-size: 20px;
 
-  color: var(--gray);
-}
+    color: #6f756f;
 
-.primary-btn {
-  width: fit-content;
-
-  display: inline-block;
-
-  margin-top: 34px;
-
-  background: var(--blue);
-  color: white;
-
-  border: none;
-
-  padding: 15px 25px;
-
-  border-radius: 100px;
-
-  text-decoration: none;
-
-  font-size: 15px;
-  font-weight: 700;
-
-  cursor: pointer;
-
-  transition: 0.25s;
-}
-
-.primary-btn:hover {
-  background: var(--blue-dark);
-
-  transform: translateY(-2px);
+    line-height: 1.8;
 }
 
 
-/* =============================================
-   SECTION
-============================================= */
+.hero-button {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-top: 35px;
+
+    padding: 14px 24px;
+
+    border-radius: 30px;
+
+    background-color: #6c8cff;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+
+.hero-button:hover {
+    background-color: #5878eb;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   공통 SECTION
+================================ */
 
 .section {
-  padding: 120px 8%;
+    padding: 110px 8%;
 }
 
-.section-heading {
-  margin-bottom: 50px;
-}
-
-.section-number {
-  color: var(--blue);
-
-  font-weight: 800;
-
-  margin-bottom: 5px;
-}
-
-.section-heading h2 {
-  font-size: 60px;
-
-  letter-spacing: -3px;
-}
-
-
-/* =============================================
-   ABOUT
-============================================= */
-
-.about-card {
-  max-width: 900px;
-
-  font-size: 28px;
-
-  line-height: 1.7;
-}
-
-.about-card strong {
-  color: var(--blue);
-}
-
-
-/* =============================================
-   PROJECT CARD
-============================================= */
-
-.projects-section {
-  min-height: 700px;
-}
-
-.project-card {
-  max-width: 1050px;
-
-  background: var(--white);
-
-  padding: 55px 60px;
-
-  border-radius: 36px;
-
-  cursor: pointer;
-
-  border: 1px solid transparent;
-
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.035);
-
-  transition: 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-
-  border-color: var(--blue);
-
-  box-shadow:
-    0 25px 65px rgba(108, 140, 255, 0.16);
-}
-
-.project-top {
-  display: flex;
-  justify-content: space-between;
-
-  margin-bottom: 30px;
-}
-
-.project-index {
-  color: var(--blue);
-
-  font-weight: 800;
-}
-
-.project-arrow {
-  width: 44px;
-  height: 44px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-
-  background: var(--blue-light);
-
-  color: var(--blue);
-
-  font-size: 20px;
-}
-
-.project-type {
-  color: var(--blue);
-
-  font-size: 18px;
-  font-weight: 800;
-
-  margin-bottom: 22px;
-}
-
-.project-card h3 {
-  font-size: 48px;
-
-  letter-spacing: -2px;
-
-  margin-bottom: 20px;
-}
-
-.project-description {
-  color: var(--gray);
-
-  font-size: 21px;
-}
-
-.project-tags {
-  margin-top: 30px;
-
-  display: flex;
-  gap: 10px;
-
-  flex-wrap: wrap;
-}
-
-.project-tags span {
-  background: var(--blue-light);
-
-  color: var(--blue-dark);
-
-  padding: 8px 15px;
-
-  border-radius: 100px;
-
-  font-size: 14px;
-
-  font-weight: 700;
-}
-
-.project-more {
-  margin-top: 35px;
-
-  color: var(--gray);
-
-  font-size: 13px;
-}
-
-
-/* =============================================
-   CONTACT
-============================================= */
-
-.contact-section {
-  min-height: 500px;
-}
-
-.contact-text {
-  font-size: 24px;
-
-  color: var(--gray);
-}
-
-.contact-links {
-  display: flex;
-
-  gap: 14px;
-
-  margin-top: 30px;
-}
-
-.contact-links a {
-  padding: 13px 22px;
-
-  border: 1px solid var(--blue);
-
-  border-radius: 100px;
-
-  text-decoration: none;
-
-  color: var(--blue);
-
-  font-weight: 700;
-}
-
-
-/* =============================================
-   MODAL
-============================================= */
-
-.modal {
-  display: none;
-
-  position: fixed;
-
-  inset: 0;
-
-  z-index: 1000;
-}
-
-.modal.active {
-  display: block;
-}
-
-.modal-overlay {
-  position: absolute;
-
-  inset: 0;
-
-  background: rgba(17, 22, 32, 0.65);
-
-  backdrop-filter: blur(8px);
-}
-
-.modal-content {
-  position: relative;
-
-  width: min(1050px, 92%);
-
-  max-height: 90vh;
-
-  margin: 5vh auto;
-
-  background: var(--white);
-
-  border-radius: 35px;
-
-  padding: 65px;
-
-  overflow-y: auto;
-
-  box-shadow: var(--shadow);
-}
-
-.modal-close {
-  position: absolute;
-
-  right: 30px;
-  top: 25px;
-
-  background: var(--blue-light);
-
-  border: none;
-
-  width: 45px;
-  height: 45px;
-
-  border-radius: 50%;
-
-  color: var(--blue);
-
-  font-size: 27px;
-
-  cursor: pointer;
-}
-
-
-/* =============================================
-   MODAL HEADER
-============================================= */
-
-.modal-type,
-.case-number {
-  color: var(--blue);
-
-  font-size: 14px;
-  font-weight: 800;
-
-  letter-spacing: 1px;
-}
-
-.modal-header h2 {
-  margin-top: 10px;
-
-  font-size: 56px;
-
-  letter-spacing: -3px;
-}
-
-.modal-subtitle {
-  margin-top: 12px;
-
-  color: var(--gray);
-
-  font-size: 20px;
-}
-
-.modal-info {
-  display: grid;
 
-  grid-template-columns:
-    repeat(3, 1fr);
+.section-label {
+    color: #6c8cff;
 
-  gap: 15px;
+    font-size: 15px;
+    font-weight: 700;
 
-  margin-top: 40px;
+    margin-bottom: 8px;
 }
-
-.modal-info div {
-  padding: 20px;
-
-  background: var(--bg);
-
-  border-radius: 15px;
-}
-
-.modal-info span {
-  display: block;
-
-  color: var(--gray);
-
-  font-size: 11px;
-
-  margin-bottom: 5px;
-}
-
-
-/* =============================================
-   CASE STUDY
-============================================= */
-
-.case-section {
-  padding: 65px 0;
-
-  border-bottom: 1px solid var(--light-gray);
-}
-
-.case-section h3 {
-  margin-top: 15px;
-
-  margin-bottom: 20px;
-
-  font-size: 36px;
-
-  letter-spacing: -1.5px;
-}
-
-.case-section p {
-  color: var(--gray);
-
-  font-size: 17px;
-}
-
-.metric-grid {
-  display: grid;
-
-  grid-template-columns:
-    repeat(4, 1fr);
-
-  gap: 12px;
-
-  margin-top: 35px;
-}
-
-.metric-card {
-  background: var(--blue-light);
-
-  padding: 24px;
-
-  border-radius: 18px;
-}
-
-.metric-card strong {
-  display: block;
-
-  color: var(--blue);
-
-  font-size: 30px;
-}
-
-.metric-card span {
-  font-size: 13px;
-
-  color: var(--gray);
-}
-
-
-/* =============================================
-   ANALYSIS
-============================================= */
-
-.analysis-grid {
-  display: grid;
-
-  grid-template-columns:
-    1fr 1fr;
-
-  gap: 15px;
-
-  margin: 30px 0;
-}
-
-.analysis-box {
-  background: var(--bg);
-
-  padding: 30px;
-
-  border-radius: 20px;
-}
-
-.analysis-box span {
-  display: block;
-
-  color: var(--blue);
-
-  font-weight: 800;
-
-  margin-bottom: 10px;
-}
-
-
-/* =============================================
-   INSIGHT
-============================================= */
-
-.insight-section h3 span {
-  color: var(--blue);
-}
-
-.compare-box {
-  margin-top: 35px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 45px;
-
-  background: var(--blue-light);
-
-  border-radius: 25px;
-
-  padding: 38px;
-}
-
-.compare-box div {
-  text-align: center;
-}
-
-.compare-box span {
-  display: block;
-
-  font-size: 14px;
-
-  color: var(--gray);
-}
-
-.compare-box strong {
-  display: block;
-
-  margin-top: 5px;
-
-  color: var(--blue);
-
-  font-size: 38px;
-}
-
-.difference {
-  text-align: center;
-
-  margin-top: 20px;
-}
-
-.difference strong {
-  color: var(--blue);
-}
-
-.stat-text {
-  margin-top: 30px !important;
-}
-
-.stat-text strong {
-  color: var(--blue);
-}
-
-
-/* =============================================
-   ACTION
-============================================= */
-
-.action-grid {
-  display: grid;
-
-  grid-template-columns:
-    1fr 1fr;
-
-  gap: 15px;
-
-  margin-top: 25px;
-}
-
-.action-card {
-  background: var(--bg);
-
-  padding: 30px;
-
-  border-radius: 20px;
-}
-
-.action-card > span {
-  color: var(--blue);
-
-  font-weight: 800;
-}
-
-.action-card h4 {
-  margin: 10px 0;
-
-  font-size: 22px;
-}
-
-
-/* =============================================
-   ROLE
-============================================= */
-
-.role-section ul {
-  margin-top: 25px;
-
-  list-style: none;
-}
-
-.role-section li {
-  padding: 12px 0;
-
-  border-bottom: 1px solid var(--light-gray);
-
-  font-size: 17px;
-}
-
-.role-section li::before {
-  content: "→";
-
-  color: var(--blue);
-
-  margin-right: 12px;
-
-  font-weight: bold;
-}
-
-
-/* =============================================
-   FINAL
-============================================= */
-
-.final-insight {
-  text-align: center;
-}
-
-.final-insight h3 {
-  font-size: 40px;
-}
-
-.final-insight span {
-  color: var(--blue);
-}
-
-.modal-buttons {
-  display: flex;
-
-  justify-content: flex-end;
-
-  gap: 10px;
-
-  padding-top: 40px;
-}
-
-.secondary-btn {
-  display: inline-block;
-
-  padding: 14px 24px;
-
-  border: 1px solid var(--blue);
-
-  color: var(--blue);
-
-  border-radius: 100px;
-
-  text-decoration: none;
-
-  font-weight: 700;
-}
-
-
-/* =============================================
-   MOBILE
-============================================= */
 
-@media (max-width: 768px) {
 
-  .nav {
-    display: none;
-  }
+.section h2 {
+    font-size: 58px;
 
-  .hero h1 {
-    font-size: 48px;
+    line-height: 1.2;
 
     letter-spacing: -2px;
-  }
 
-  .section-heading h2 {
-    font-size: 42px;
-  }
+    margin-bottom: 50px;
+}
 
-  .project-card {
-    padding: 35px 30px;
-  }
 
-  .project-card h3 {
-    font-size: 36px;
-  }
+/* ================================
+   ABOUT
+================================ */
 
-  .modal-content {
-    padding: 45px 25px;
-  }
+.about-content {
+    max-width: 850px;
+}
 
-  .modal-header h2 {
-    font-size: 38px;
-  }
 
-  .modal-info,
-  .metric-grid,
-  .analysis-grid,
-  .action-grid {
-    grid-template-columns: 1fr;
-  }
+.about-content p {
+    font-size: 26px;
 
-  .compare-box {
-    flex-direction: column;
+    line-height: 1.8;
+
+    color: #424942;
+}
+
+
+/* ================================
+   PROJECTS
+================================ */
+
+.projects {
+    min-height: 700px;
+}
+
+
+.project-card {
+    max-width: 1000px;
+
+    background-color: #ffffff;
+
+    border-radius: 35px;
+
+    padding: 55px 60px;
+
+    transition: 0.3s;
+
+    border: 1px solid transparent;
+}
+
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #6c8cff;
+
+    box-shadow: 0 20px 45px rgba(108, 140, 255, 0.12);
+}
+
+
+.project-type {
+    color: #6c8cff;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+.project-card h3 {
+    font-size: 45px;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 20px;
+}
+
+
+.project-description {
+    font-size: 21px;
+
+    color: #17251b;
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact {
+    min-height: 500px;
+}
+
+
+.contact-description {
+    font-size: 20px;
+
+    color: #6f756f;
+
+    margin-bottom: 30px;
+}
+
+
+.contact-links {
+    display: flex;
 
     gap: 15px;
-  }
+}
+
+
+.contact-links a {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    background-color: #6c8cff;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+
+.contact-links a:hover {
+    background-color: #5878eb;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    padding: 35px 8%;
+
+    border-top: 1px solid #e1e3de;
+
+    color: #8b918b;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   모바일
+================================ */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 25px 6%;
+    }
+
+
+    nav {
+        gap: 15px;
+    }
+
+
+    nav a {
+        font-size: 11px;
+    }
+
+
+    .hero {
+        padding: 60px 6%;
+    }
+
+
+    .hero h1 {
+        font-size: 44px;
+
+        letter-spacing: -2px;
+    }
+
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+
+    .section {
+        padding: 80px 6%;
+    }
+
+
+    .section h2 {
+        font-size: 45px;
+    }
+
+
+    .about-content p {
+        font-size: 21px;
+    }
+
+
+    .project-card {
+        padding: 40px 30px;
+
+        border-radius: 25px;
+    }
+
+
+    .project-card h3 {
+        font-size: 35px;
+    }
+
+
+    .project-description {
+        font-size: 17px;
+    }
 
 }
