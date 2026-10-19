@@ -6,7 +6,7 @@
 
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
 </head>
 
 <body>
@@ -85,7 +85,11 @@
 
 
         <!-- PROJECT 01 -->
-        <div class="project-card">
+        <div class="project-card" id="project1">
+
+            <p class="project-number">
+                01
+            </p>
 
             <p class="project-type">
                 USER BEHAVIOR ANALYSIS
@@ -97,6 +101,16 @@
 
             <p class="project-description">
                 2023년 5월 대량 유입 사용자의 Retention 행동 분석
+            </p>
+
+            <div class="project-tags">
+                <span>Retention</span>
+                <span>User Behavior</span>
+                <span>A/B Test</span>
+            </div>
+
+            <p class="project-more">
+                Click to view case study
             </p>
 
         </div>
@@ -171,6 +185,223 @@
             © 2026 Portfolio
         </p>
     </footer>
+
+
+    <!-- =========================================
+         PROJECT 01 DETAIL MODAL
+    ========================================== -->
+    <div class="project-modal" id="project1Modal">
+
+        <div class="modal-overlay" id="project1Overlay"></div>
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="project1Close"
+                type="button"
+            >
+                ×
+            </button>
+
+            <p class="modal-type">
+                USER BEHAVIOR ANALYSIS
+            </p>
+
+            <h2>
+                왜 남고, 왜 떠나는가
+            </h2>
+
+            <p class="modal-subtitle">
+                2023년 5월 대량 유입 사용자의 Retention 행동 분석과 반복 이용 개선 전략
+            </p>
+
+
+            <div class="modal-section">
+
+                <p class="modal-label">
+                    PROJECT OVERVIEW
+                </p>
+
+                <h3>
+                    대량 유입 이후,
+                    누가 남고 누가 멈췄는가?
+                </h3>
+
+                <p>
+                    2023년 5월 대규모 신규 유입 이후
+                    첫 Vote 경험이 실제 반복 이용으로 이어지는지 확인하고,
+                    초기 행동과 이후 Retention의 관계를 분석했습니다.
+                </p>
+
+            </div>
+
+
+            <div class="modal-section">
+
+                <p class="modal-label">
+                    01 · PROBLEM
+                </p>
+
+                <h3>
+                    첫 Vote 진입은 높았지만
+                    이후 Retention은 빠르게 감소
+                </h3>
+
+                <div class="result-grid">
+
+                    <div>
+                        <strong>89.03%</strong>
+                        <span>48h Activation</span>
+                    </div>
+
+                    <div>
+                        <strong>68.0%</strong>
+                        <span>W2 Retention</span>
+                    </div>
+
+                    <div>
+                        <strong>2.8%</strong>
+                        <span>W8 Retention</span>
+                    </div>
+
+                </div>
+
+                <p>
+                    핵심 문제를 ‘첫 Vote 경험’이 아니라
+                    ‘첫 경험을 반복 이용으로 연결하는 과정’으로 재정의했습니다.
+                </p>
+
+            </div>
+
+
+            <div class="modal-section">
+
+                <p class="modal-label">
+                    02 · ANALYSIS
+                </p>
+
+                <h3>
+                    초기 강도 × 초기 지속성으로
+                    사용자 행동을 비교
+                </h3>
+
+                <div class="metric-grid">
+
+                    <div class="metric-box">
+                        <span>INITIAL INTENSITY</span>
+                        <strong>초기 강도</strong>
+                        <p>첫 Valid Vote 후 24시간 미만 Vote 횟수</p>
+                    </div>
+
+                    <div class="metric-box">
+                        <span>PERSISTENCE</span>
+                        <strong>초기 지속성</strong>
+                        <p>R1~R7 중 Valid Vote 활동일 수</p>
+                    </div>
+
+                    <div class="metric-box">
+                        <span>RETENTION</span>
+                        <strong>후속 잔존</strong>
+                        <p>R8~R14 Valid Vote 1회 이상 여부</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-section">
+
+                <p class="modal-label">
+                    03 · KEY INSIGHT
+                </p>
+
+                <h3>
+                    초기 Vote 횟수보다
+                    <span>여러 날 반복한 지속성이 Retention을 더 크게 구분</span>
+                </h3>
+
+                <div class="result-grid">
+
+                    <div>
+                        <strong>83.05%</strong>
+                        <span>고강도 · 고지속 W2</span>
+                    </div>
+
+                    <div>
+                        <strong>38.93%</strong>
+                        <span>고강도 · 저지속 W2</span>
+                    </div>
+
+                    <div>
+                        <strong>+44.12%p</strong>
+                        <span>W2 Retention 격차</span>
+                    </div>
+
+                </div>
+
+                <p>
+                    W2~W8에서 초기 지속성과 이후 Vote Retention 간
+                    통계적으로 유의한 연관성을 확인했습니다.
+                    관찰 데이터 기반 결과이므로 인과관계로 해석하지 않았습니다.
+                </p>
+
+            </div>
+
+
+            <div class="modal-section">
+
+                <p class="modal-label">
+                    04 · ACTION
+                </p>
+
+                <h3>
+                    반복 이용을 만들기 위한
+                    단계별 개선안 제안
+                </h3>
+
+                <div class="action-grid">
+
+                    <div>
+                        <span>01</span>
+                        <h4>R3 Re-engagement</h4>
+                        <p>
+                            첫 주 참여 감소 구간에 R3 재참여 알림을 제안하고
+                            A/B Test로 효과를 검증하도록 설계했습니다.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <h4>Question Experience</h4>
+                        <p>
+                            Question 유형별 관심·신고 반응을 분석하고
+                            LLM 기반 개인화 질문 운영 방향을 제안했습니다.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-section conclusion-box">
+
+                <p class="modal-label">
+                    CONCLUSION
+                </p>
+
+                <h3>
+                    문제는 첫 Vote 자체가 아니라,<br>
+                    <span>첫 경험을 반복 이용으로 연결하는 과정이었습니다.</span>
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
 
 
     <!-- =========================================
@@ -610,7 +841,7 @@
 
 
     <!-- JAVASCRIPT -->
-    <script src="script.js?v=4"></script>
+    <script src="script.js?v=5"></script>
 
 </body>
 </html>
